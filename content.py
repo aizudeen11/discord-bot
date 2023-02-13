@@ -1,4 +1,4 @@
-import random
+ import random
 import pandas as pd
 import requests as r
 import datetime as dt
@@ -14,7 +14,7 @@ def get_random_quote():
 
 
 def get_stock():
-  token = "zjNUF4abiX0eUwDn1Kl9GCKGNB50sWc4KcfJxHMO"
+  token = "enter your token"
   url = f"https://api.marketaux.com/v1/news/all?symbols=TSLA,AMZN,MSFT&filter_entities=true&language=en&api_token={token}"
   data = r.get(url).json()
   title = data['data'][0]["title"]
