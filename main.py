@@ -1,6 +1,5 @@
 import discord
 import content
-from keep_alive import keep_alive
 
 async def send_message(message, user_message, is_private):
     try:
@@ -40,6 +39,5 @@ def run_discord_bot():
 
     client.run(TOKEN)
 
-if __name__ == '__main__':
-  keep_alive()  
+if __name__ == '__main__':  
   run_discord_bot()
